@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>Admin Login</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <?php include('includes/header.php');?>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="page-head-line">ADMIN LOGIN</h4>
+
+                </div>
+
+            </div>
+             <span style="color:red;" ><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg']="");?></span>
+            <form name="admin" method="post">
+            <div class="row">
+                <div class="col-md-6">
+                     <label>Enter Username : </label>
+                        <input type="text" name="username" class="form-control" required />
+                        <label>Enter Password :  </label>
+                        <input type="password" name="password" class="form-control" required />
+                        <hr />
+                        <button type="submit" name="submit" class="btn btn-info"><span class="glyphicon glyphicon-user"></span> &nbsp;Log Me In </button>&nbsp;
+                </div>
+                </form>
+                <div class="col-md-6">
+                   
+                        
+                            
+                        </ul>
+                       
+                    </div>
+                                    </div>
+
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
